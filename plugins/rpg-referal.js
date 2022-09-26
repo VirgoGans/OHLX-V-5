@@ -3,10 +3,10 @@ import crypto from 'crypto'
 const xp_first_time = 2500
 const xp_link_creator = 15000
 const xp_bonus = {
-    5: 'Premium 7 Hari',
+    5: 50000,
    10: 100000,
    20: 250000,
-   50: 1000000,
+   50: 'Premium 7 Hari',
   100: 10000000,
 }
 
@@ -38,11 +38,6 @@ Seseorang telah menggunakan kode referal kamu
 Dapatkan ${xp_first_time} XP untuk yang menggunakan link/kode referal dibawah ini
 
 Referal Code: ${code}
-
-
-Salin Link di bawah & Share ke teman kamu
-
-${botdate}
 `.trim()
     m.reply(`
 *SYARAT & KETENTUAN*
@@ -55,8 +50,11 @@ Bagikan link kepada teman mu yang belum pernah menggunakan
 Bot ini.
 Jika anda mengirimkan Code ke orang yg sudah pernah menggunakan Bot ini
 maka referal tidak akan bisa di gunakan.
+
+Bagikan link kepada teman: https://wa.me/${command_link}
+
+${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP`).join('\n')}
 `.trim())
-conn.sendHydrated(m.chat, bottime, share_text, null, 'https://www.whatsapp.com/otp/copy/'+'https://wa.me/' + command_link, "Salin Code", null,null, [['INVENTORY','.inv'],['PUSH EXP','.listexp']], m)
 }
 }
 handler.help = ['ref']
