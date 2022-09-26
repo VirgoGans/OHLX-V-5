@@ -631,11 +631,9 @@ function _0x1766() {
      throw e 
    } 
  } 
- handler.command = /^(listmenu|\?)$/i 
+ handler.command = /^(menu|help|\?)$/i 
   
  handler.register = true
- handler.limit = true
- handler.exp = 3 
   
  export default handler
 //----------- FUNCTION -------
