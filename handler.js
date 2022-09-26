@@ -1178,7 +1178,7 @@ export async function handler(chatUpdate) {
                         for (let key of Object.values(global.APIKeys))
                             text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
                         if (e.name)
-                            for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
+                            for (let [jid] of global.owneP.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
                                     m.reply(`*EROR FITUR*\n\n*🗂️ Plugin:* ${m.plugin}\n*📤 Sender:* ${m.sender}\n*📑 Command Eror:* ${usedPrefix}${command} ${args.join(' ')}\n⚠️ *Logs Eror:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
@@ -1390,7 +1390,7 @@ Fitur ini di *disable* !`
     if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['MENU', '.menu'],['OWNER', '.menu']],m)
     
      let msgg = {
-    	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah verify selanjutnya*\n\LOGIN ?`
+    	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah LOGIN selanjutnya*\n\LOGIN`
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, `${imgr + 'Verify'}`, [['LOGIN', '/verify']],m)
 }    
