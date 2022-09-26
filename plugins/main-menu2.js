@@ -70,7 +70,7 @@ await conn.sendButton(m.chat, bottime, caption, pp, [
 handler.help = ['menu', 'help']
 handler.tags = ['main']
 
-handler.command = /^menu|help$/i
+handler.command = /^epep$/i
 
 handler.limit = true
 handler.register = true
