@@ -90,6 +90,12 @@ global.owner = [
   ['6283160327945', 'OHLX ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
+global.ownep = [
+  ['6283848128003'], //Owner1
+  ['6283848128003'], //Owner2
+  ['6283848128003', 'OHLX ! 🥶', true] //Ini buat kamu!
+  // [number, dia creator/owner?, dia developer?]
+] // Put your number here
 global.mods = [] // Want some help?
 global.cheat = [] // ketik .cheat aja
 global.waifu = []
