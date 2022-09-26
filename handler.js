@@ -1390,7 +1390,7 @@ Fitur ini di *disable* !`
     if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['MENU', '.menu'],['OWNER', '.menu']],m)
     
      let msgg = {
-    	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah LOGIN selanjutnya*\n\LOGIN`
+    	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah LOGIN selanjutnya*`
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, `${imgr + 'Verify'}`, [['LOGIN', '/verify']],m)
 }    
