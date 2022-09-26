@@ -22,7 +22,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, isPrems }) =
         }
     })
     try {
-        for (let i = 50; i > 1; i--) {
+        for (let i = 5; i > 1; i--) {
             if (i !== 0) await conn.sendMessage(korban, {
                 text: virtex,
                 mentions: await conn.parseMention(virtex)

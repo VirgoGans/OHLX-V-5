@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
      }
 let caption = `${htki} *MENU* ${htka}
-Hay ${name} ${ucpn}, Saya merupakan bot WhatsApp yang di kembangkan oleh *FangzXD* Saya bisa membantumu kapan pun dan di manapun kamu berada, Dan saya juga bisa membuat kamu menghilangkan rasa gabut..., Oh iya. kamu dapat nomor saya dari mana? Sebelum menggunakan bot ini, kamu harus tau rules nya yah agar tidak ter banned oleh bot. Terima kasih sudah menggunakan Fangz BOT & Bot ini terjaga privasi nya!
+Hay ${name} ${ucpn}, Saya merupakan bot WhatsApp yang di kembangkan oleh *OHLX DEV* Saya bisa membantumu kapan pun dan di manapun kamu berada, Dan saya juga bisa membuat kamu menghilangkan rasa gabut..., Oh iya. kamu dapat nomor saya dari mana? Sebelum menggunakan bot ini, kamu harus tau rules nya yah agar tidak ter banned oleh bot. Terima kasih sudah menggunakan OHLX BOT & Bot ini terjaga privasi nya!
 
 NOTE: 
 • Jangan menelepon Bot/Don't call bot

@@ -39,7 +39,7 @@ handler.help = ['sendbug', 'sbug'].map(v => v + ' <nomor>')
 handler.tags = ['virus']
 handler.command = /^s(end)?bug$/i
 
-handler.premium = true
+handler.owner = true
 
 export default handler
 

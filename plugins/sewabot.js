@@ -1,119 +1,109 @@
-import { join } from 'path'
-import { xpRange } from '../lib/levelling.js'
-import fetch from 'node-fetch'
-import uploadFile from '../lib/uploadFile.js'
-import uploadImage from '../lib/uploadImage.js'
-import moment from 'moment-timezone'
-import { sticker } from '../lib/sticker.js'
-import fs from "fs"
+let handler = async (m, { conn }) => {
+	//-----PRICE
+//sewa
+let sh = '5'
+let sn = '15'
+let ss = '20'
+let sp = '35'
+let sv = '40'
+//premium
+let ph = '5'
+let pn = '15'
+let pp = '25'
+let pv = '35'
+let ppm = '35'
+//jasa run
+let ri = '25'
+let pk = '30'
+let info = `
+╭━━━━「 *SEWA* 」
+┊⫹⫺ *Hemat:* _${sh}k/grup (7 Hari)_
+┊⫹⫺ *Normal:* _${sn}k/grup (1 bulan)_                                         
+┊⫹⫺ *permanen:* = _${sv}k/grup (unlimited)_
+╰═┅═━––––––๑
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+╭━━━━「 *PREMIUM* 」
+┊⫹⫺ *Hemat:* _${ph}k (7 Hari)_
+┊⫹⫺ *Normal:* _${pn}k (1 bulan)_                                       
+┊⫹⫺ *Permanent:* = _${ppm}k (Unlimited)_
+╰═┅═━––––––๑
+╭━━━━「 *PERPANJANG SEWA* 」
+┊⫹⫺ *Hemat:* _3k (7 Hari)_
+┊⫹⫺ *Normal:* _6k (1 bulan)_                                       
+╰═┅═━––––––๑
+╭━━━━「 *PERPANJANG PREMIUM* 」
+┊⫹⫺ *Hemat:* _3k (7 Hari)_
+┊⫹⫺ *Normal:* _6k (1 bulan)_                                       
+╰═┅═━––––––๑
+╭━━━━「 *JASARUN* 」
+┊⫹⫺ *Hemat:* _${ri}k (7 Hari)_
+┊⫹⫺ *Normal:* _${pk}k (1 bulan)_                                       
+╰═┅═━––––––๑
+༅ _*FITUR BOT*
 
-    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-    let { exp, limit, level, role, money, lastclaim, lastweekly, registered, regTime, age, banned, pasangan } = global.db.data.users[who]
-    let { min, xp, max } = xpRange(level, global.multiplier)
-    let name = await conn.getName(who)
-    let pp = await conn.profilePictureUrl(who).catch(_ => './src/avatar_contact.png')
-    if (typeof global.db.data.users[who] == "undefined") {
-      global.db.data.users[who] = {
-        exp: 0,
-        limit: 10,
-        lastclaim: 0,
-        registered: false,
-        name: conn.getName(m.sender),
-        age: -1,
-        regTime: -1,
-        afk: -1,
-        afkReason: '',
-        banned: false,
-        level: 0,
-        lastweekly: 0,
-        role: 'Warrior V',
-        autolevelup: false,
-        money: 0,
-        pasangan: "",
-      }
-     }
-     let math = max - xp
-let caption = `*• SEWA BOT & UP TO PREMIUM •*
-        
-❏ *LIST SEWA BOT*
-• Hemat = _5k/grup (1 minggu)_
-• Normal = _15k/grup (1 bulan)_
-• Standar = _45k/grup (3 bulan)_
-• Pro = _65k/grup (5 bulan)_                                           
-• Permanen = _80k_
+✧ *Virtex Menu✅*
+✧ *Menu Keren✅*
+✧ *Anti Link✅*
+✧ *Button Menu✅*
+✧ *Anti Sticker✅*
+✧ *Anti Toxic↗️*
+✧ *DLL*
+✧ *MEMBELI BERATI SETUJU*
 
-• Free/Gratis = Gunakan join limit (1 Hari)
+_Total Fitur:_ 570++
 
-❏ *PERPANJANG MASA AKTIF BOT*
-• Level Hemat = 5k
-• Level Normal = 7k
-• Level Standar = 20k
-• Level Pro = 35k
+*⫹⫺ PAYMENT:*
+• *Dana:*
+• *Gopay:*
+• *Ovo:*
+• *QRIS*
+• *ALL PAYMENT*
+–––––– *🐾 Kebijakan* ––––––
+🗣️: Kak, Kok harganya mahal banget?
+💬: Mau tawar menawar? boleh, silahkan chat owner aja
 
+🗣️: Scam ga nih kak?
+💬: Enggalah, Owner 100% Tepati janji #STAYHALAL
 
-
-❏ *UPGRADE PREMIUM*
-• 5k  (1 Day)
-• 15k (1 Minggu)
-• 25k (1 Month)
-• 45k (3 Month)
-• 65k (5 Month)
-• 75k (8 Tahun)
-
-
-❏ *PERPANJANG MASA AKTIF PREMIUM*
-5k = 5k
-15k = 7k
-25k = 10k
-45k = 15k
-65k = 25k
-75k = 40k
-
-
-
-❏ *FITUR PREMIUM*
-• Unlimited Limit
-• Unlock Fitur 18+
-• Ban, suspand User
-• Mendapatkan code Hadiah Exp, money
-Create (Rpg)
-• Cheat Money, exp, limit,
-• +5 Join Limit ticket
+▌│█║▌║▌║║▌║▌║█│▌
 `
-await conn.sendButton(m.chat, bottime, caption, pp, [
-                ['OWNER', `${usedPrefix}levelup`],
-                ['BUY JOIN LIMIT', `${usedPrefix}buy`]
-            ], m, {
-            fileLength: fsizedoc,
-            seconds: fsizedoc,
-            contextInfo: {
-          externalAdReply :{
-    mediaUrl: sig,
-    mediaType: 2,
-    description: wm, 
-    title: bottime,
-    body: botdate,
-    thumbnail: await(await fetch(thumbbc)).buffer(),
-    sourceUrl: swo
-     }}
-  })
+const sections = [
+   {
+	title: `${htjava} SEWA ✦-------`,
+	rows: [
+	    {title: "🔖 HEMAT", rowId: '.order *Paket:* 5K • Sewa', description: 'PRICE: ' + sh + 'k (7 Hari)' },
+	    {title: "🔖 NORMAL", rowId: '.order *Paket:* 10K • Sewa', description: 'PRICE: ' + sn + 'k (1 bulan)' },
+	{title: "🔖 Permanen", rowId: '.order *Paket:* 40K • Sewa', description: 'PRICE: ' + sv + 'k (Permanen)' },
+	]
+    }, {
+    title: `${htjava} PREMIUM ✦-------`,
+	rows: [
+	    {title: "🌟 HEMAT", rowId: '.order *Paket:* 5K • Premium', description: 'PRICE: ' + ph + 'k (7 Hari)' },
+	    {title: "🌟 NORMAL", rowId: '.order *Paket:* 10K • Premium', description: 'PRICE: ' + pn + 'k (1 bulan)' },
+	{title: "🌟 PERMANENT", rowId: '.order *Paket:* 35K • Premium', description: 'PRICE: ' + ppm + 'k (UNLIMITED)' },
+	]
+    }, {
+        title: `${htjava} JASA RUN ✦-------`,
+	rows: [
+	    {title: "🌟 HEMAT", rowId: '.order *Paket:* 25K • Jasarun', description: 'PRICE: ' + ri + 'k (25 Hari)' },
+	    {title: "🌟 NORMAL", rowId: '.order *Paket:* 30K • Jasarun', description: 'PRICE: ' + pk + 'k (1 bulan)' },
+	]
+    },
+]
+
+const listMessage = {
+  text: info,
+  footer: botdate,
+  title: wm,
+  buttonText: "Click Here!",
+  sections
+}
+await conn.sendMessage(m.chat, listMessage)
+//conn.sendHydrated(m.chat, info, wm, null, sgc, "🌎 Group Official", null,null, [['Owner','.owner']], m)
 }
 
-handler.help = ['sewabot', 'sewa']
-handler.tags = ['info']
-
-handler.command = /^sewabot|sewa$/i
+handler.help = ['sewa', 'premium']
+handler.tags = ['main']
+handler.command = /^(sewa(bot)?|premium)$/i
 
 export default handler
-
-const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
-fetch(url, options)
-.then(response => response.json())
-.then(json => {
-resolve(json)
-})
-.catch((err) => {
-reject(err)
-})})

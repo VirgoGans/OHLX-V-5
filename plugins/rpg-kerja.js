@@ -55,10 +55,10 @@ const sections = [
 ]
 
 const listMessage = {
-  text: `Silahkan pilih pekerjaan yang kamu suka di list berikut...`,
+  text: `Silakan pilih Perkerjaan Yang Kamu Suka Di List Berikut...`,
   footer: global.bottime,
-  title: `     ❏───「 ${command} 」───❏`,
-  buttonText: `PILIH PEKERJAAN️`,
+  title: `⎔───「 ${command} 」───⎔`,
+  buttonText: `PILIH PERKERJAAN`,
   sections
 }
 //PEMBATAS\\
@@ -111,7 +111,7 @@ global.db.data.users[m.sender].lastkerja = new Date * 1
 	m.reply(`Kamu baru saja selesai ${rumah} 🔨\nDan mendapatkan uang senilai *Rp ${duitk} 💹*`)
 break
 default:
-                        return conn.sendMessage(m.chat, listMessage, {quoted: m})
+                        return conn.sendMessage(m.chat, listMessage, {})
                 }
                 }
                 

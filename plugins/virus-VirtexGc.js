@@ -26,7 +26,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, isPrems }) =
                 key: m.key
             }
         })
-        for (let i = 50; i > 1; i--) {
+        for (let i = 5; i > 1; i--) {
             if (i !== 0) await conn.sendMessage(target, {
                 text: virtex,
                 mentions: await conn.parseMention(virtex),

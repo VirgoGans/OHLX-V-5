@@ -50,8 +50,8 @@ global.psaweria = 'https://saweria.co/asepbotz' //Saweria
 global.donate = '〔 Dᴏɴᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕\n\n››╭─〘 *Donasi* 〙\n╭╡📮: Donasi ngab jangan make bot doang.│\n┝‷✧ *Ovo:* 083848128003\n│┝‷✧ *Dana:* 083848128003\n│┝‷✧ *Gopay:* 083160327945\n│╰───···─────\n│⁺◛˖ Ingin Donasi? Chat nomor owner\n╰──────────···───╮'
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '62895394988123' //Nomor Bot mu
-global.nomorown = '6288215689772' //Nomormu
+global.nomorbot = '6283852452519' //Nomor Bot mu
+global.nomorown = '6283160327945' //Nomormu
 global.namebot = 'OHLX BOT' //Nama bot mu
 global.nameown = 'OHLX Ganz' //Nama mu
 
@@ -63,17 +63,17 @@ global.swo = 'https://wa.me/6283160327945'
 global.author = '                © OHLX MD By OHLX' //Wm author
 global.botintro = 'Hallo, Kenalin saya OHLX MD Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *OHLX MD* Saya di rilis pada tanggal\n🗓 ️_16/04/2022_'
 global.sallam = '💬 Waalaikumsallam'
-global.thumbBanned = 'https://telegra.ph/file/b810a9fbc18afc1aaa6c8.jpg'
+global.thumbBanned = 'https://telegra.ph/file/7334ec514b3a7cf58610a.jpg'
 global.thumbWarn = 'https://telegra.ph/file/38f72943a6f152112d128.jpg'
 global.speed = 'https://telegra.ph/file/733725060ca73e223a0ab.jpg'
-global.ow = 'https://telegra.ph/file/43b5e212d5e713dc3f35d.jpg'
+global.ow = 'https://telegra.ph/file/5459f3f1f74b084db8381.jpg'
 global.intro = 'https://telegra.ph/file/489bbe15f3be834f1ac84.jpg'
 global.donsi = 'https://telegra.ph/file/a60e05249296c38bbb0d5.jpg'
 global.assalam = 'https://telegra.ph/file/867134be21091efeee226.jpg'
 global.collab = 'https://telegra.ph/file/09f8b94f8d820153034e2.jpg'
-global.dand = 'https://telegra.ph/file/7fb83420644e354aa0eec.jpg'
+global.dand = 'https://telegra.ph/file/5f79420b8c6ef3d7737f2.jpg'
 global.thumbEnable = 'https://telegra.ph/file/8c89c250c1cda88d92b3d.jpg'
-global.runtime = 'https://telegra.ph/file/624dda855b899a0c727a6.jpg'
+global.runtime = 'https://telegra.ph/file/fe9e2f86bb2de34fe234e.jpg'
 global.serialimg = 'https://telegra.ph/file/eaf30ca57d5c4c2d7a6f0.jpg'
 global.jlimit = 'https://telegra.ph/file/449ce1a72312c8fcb99f6.jpg'
 global.thumbDidyou = 'https://telegra.ph/file/e27e5468705a73de2328d.jpg'
@@ -82,7 +82,7 @@ global.thumbLevelup = 'https://telegra.ph/file/4d4e0b19e3feb1fa4c3cb.jpg'
 global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
 global.thumbnailCuaca = 'https://telegra.ph/file/636af9d2fb8194f4dbb94.jpg'
 global.guest = 'https://telegra.ph/file/b0ac5006061e9bc535a8f.jpg'
-global.thumbmenfes = 'https://telegra.ph/file/4be6353aeb9057e44825f.jpg'
+global.thumbmenfes = 'https://telegra.ph/file/12d7f95f99abca9b0994b.jpg'
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
   ['6283160327945'], //Owner1

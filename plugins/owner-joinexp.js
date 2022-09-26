@@ -52,7 +52,7 @@ Untuk menggunakan *${conn.user.name}* silahkan ketik
       throw `Bot Berhasil bergabung ke group`
       }
 }
-handler.help = ['joinexp <chat.whatsapp.com> <day>']
+handler.help = ['join <chat.whatsapp.com> <day>']
 handler.tags = ['owner']
 handler.command = /^joinexp$/i
 
