@@ -30,30 +30,29 @@ global.wktuwib = `${global.wibh} H ${global.wibm} M ${global.wibs} S`
 // Kalau gapunya di biarin aja!, atau ga di kasih tanda '-'
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/ohlxmarket?igshid=YmMyMTA2M2Y=' //Instagram mu
-global.sgh = 'https://github.com' //Github mu
-global.swb = 'https://chat.whatsapp.com/IFjWiJjVM0dHBEK6j05GEF'
-global.sfb = 'https://www.facebook.com/'
-global.syt = 'https://www.youtube.com/'
-global.syt = 'https://youtube.com/channel/UCI0e4GqmeLZhy8KE8c9JPsw' //YT Mu
-global.sgc = 'https://chat.whatsapp.com/IFjWiJjVM0dHBEK6j05GEF' //Group WhatsApp mu
-global.sdc = 'https://youtube.com/channel/UCI0e4GqmeLZhy8KE8c9JPsw' //Discord Mu
+global.sig = '-' //Instagram mu
+global.sgh = 'https://github.com/VirgoGans' //Github mu
+global.swb = '-'
+global.sfb = '-'
+global.syt = 'https://www.youtube.com/c/VirgoGans'
+global.sgc = '-' //Group WhatsApp mu
+global.sdc = '-' //Discord Mu
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
 /*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
-global.pdana = '083848128003' //Dana
-global.povo = '083848128003' //Ovo
-global.pgopay = '083160327945' //Gopay
-global.ppulsa = '083848128003' //Pulsa 
+global.pdana = '6288227856331' //Dana
+global.povo = '6288227856331' //Ovo
+global.pgopay = '6288227856331' //Gopay
+global.ppulsa = '6288227856331' //Pulsa 
 global.ppulsa2 = '' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
-global.psaweria = 'https://saweria.co/asepbotz' //Saweria
-global.donate = '〔 Dᴏɴᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕\n\n››╭─〘 *Donasi* 〙\n╭╡📮: Donasi ngab jangan make bot doang.│\n┝‷✧ *Ovo:* 083848128003\n│┝‷✧ *Dana:* 083848128003\n│┝‷✧ *Gopay:* 083160327945\n│╰───···─────\n│⁺◛˖ Ingin Donasi? Chat nomor owner\n╰──────────···───╮'
+global.psaweria = 'https://github.com/VirgoGans' //Saweria
+global.donate = 'BOT FREE GAUSAH DONASI:)'
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '6283852452519' //Nomor Bot mu
-global.nomorown = '6283160327945' //Nomormu
-global.namebot = 'OHLX BOT' //Nama bot mu
-global.nameown = 'OHLX Ganz' //Nama mu
+global.nomorbot = '6288227856331' //Nomor Bot mu
+global.nomorown = '6288227856331' //Nomormu
+global.namebot = 'V-BOT' //Nama bot mu
+global.nameown = 'Virgo Gans' //Nama mu
 
 /*⫘⫘⫘⫘GLOBAL FUNCTION⫘⫘⫘⫘⫘*/
 //KALAU MAGER EDIT, MENDING GAUSAH DI APA² IN. SAMA AJA//
@@ -154,13 +153,13 @@ global.xckey = 'BOhjM2hUVn'
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '                「 赤 OHLX - MD ⁩இ 」' //Wm
-global.wm2 = '➳༻❀OHLX - Ganz❁ུ۪۪.;:୭̥.' //Name Wm
-global.wm3 = '赤 OHLX - MD'
+global.wm = '                「 赤 V-Bot - MD ⁩இ 」' //Wm
+global.wm2 = '➳༻❀VIRGO - Ganz❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '赤 V-Bot - MD'
 global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗪𝗔𝗞𝗧𝗨 : ${wib}`
-global.titlebot = '𝗬𝗧: OHLX GT' //Ganti serah lu
+global.titlebot = '𝗬𝗧: V-Bot MD' //Ganti serah lu
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
 // INI JUGA GANTI SETERAH MU
@@ -513,9 +512,9 @@ global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
-global.stickpack = 'YT: OHLX GT'
-global.stickauth = `© OHLX MD\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
-global.packname = 'By OHLX'
+global.stickpack = 'V-Bot'
+global.stickauth = `© Wangsaff`
+global.packname = 'https://github.com/VirgoGans'
 
 
 global.multiplier = 38 // The higher, The harder levelup
@@ -676,7 +675,7 @@ global.fpayment = (m) => {
 			requestFrom: (m !== null && m !== undefined) ? m.sender : '0@s.whatsapp.net',
 			noteMessage: {
 				extendedTextMessage: {
-					text: (m !== null && m !== undefined) ? m.text : 'Subs YT: OHLX GT'
+					text: (m !== null && m !== undefined) ? m.text : 'V-Bot'
 				}
 			},
 			expiryTimestamp: 999999999,
