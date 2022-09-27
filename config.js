@@ -84,15 +84,15 @@ global.guest = 'https://telegra.ph/file/b0ac5006061e9bc535a8f.jpg'
 global.thumbmenfes = 'https://telegra.ph/file/12d7f95f99abca9b0994b.jpg'
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6283160327945'], //Owner1
-  ['6283160327945'], //Owner2
-  ['6283160327945', 'Virgo ! 🥶', true] //Ini buat kamu!
+  ['6288227856331'], //Owner1
+  ['6288227856331'], //Owner2
+  ['6288227856331', 'Virgo ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.ownep = [
-  ['6283848128003'], //Owner1
-  ['6283848128003'], //Owner2
-  ['6283848128003', 'Virgo ! 🥶', true] //Ini buat kamu!
+  ['6288227856331'], //Owner1
+  ['6288227856331'], //Owner2
+  ['6288227856331', 'Virgo ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = ['6288227856331'] // Want some help?
