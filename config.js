@@ -57,10 +57,10 @@ global.nameown = 'Virgo Gans' //Nama mu
 /*⫘⫘⫘⫘GLOBAL FUNCTION⫘⫘⫘⫘⫘*/
 //KALAU MAGER EDIT, MENDING GAUSAH DI APA² IN. SAMA AJA//
 global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰' //Gausah di apa² in
-global.after = 'Bot by OHLX'
+global.after = 'Bot by Virgo'
 global.swo = 'https://wa.me/6283160327945'
-global.author = '                © OHLX MD By OHLX' //Wm author
-global.botintro = 'Hallo, Kenalin saya OHLX MD Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *OHLX MD* Saya di rilis pada tanggal\n🗓 ️_16/04/2022_'
+global.author = '                © Virgo MD By Virgo' //Wm author
+global.botintro = 'Hallo, Kenalin saya Virgo MD Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *Virgo MD* Saya di rilis pada tanggal\n🗓 ️_16/04/2022_'
 global.sallam = '💬 Waalaikumsallam'
 global.thumbBanned = 'https://telegra.ph/file/7334ec514b3a7cf58610a.jpg'
 global.thumbWarn = 'https://telegra.ph/file/38f72943a6f152112d128.jpg'
@@ -86,19 +86,19 @@ global.thumbmenfes = 'https://telegra.ph/file/12d7f95f99abca9b0994b.jpg'
 global.owner = [
   ['6283160327945'], //Owner1
   ['6283160327945'], //Owner2
-  ['6283160327945', 'OHLX ! 🥶', true] //Ini buat kamu!
+  ['6283160327945', 'Virgo ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.ownep = [
   ['6283848128003'], //Owner1
   ['6283848128003'], //Owner2
-  ['6283848128003', 'OHLX ! 🥶', true] //Ini buat kamu!
+  ['6283848128003', 'Virgo ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = [] // Want some help?
+global.mods = ['6288227856331'] // Want some help?
 global.cheat = [] // ketik .cheat aja
 global.waifu = []
-global.prems = [] // Jangan di isi, Tambahin dari bot nya ketik .addprem @Fangz 15
+global.prems = ['6288227856331'] // Jangan di isi, Tambahin dari bot nya ketik .addprem @Fangz 15
 
 
 /*⫘⫘⫘⫘ APIKEY ⫘⫘⫘⫘⫘*/
@@ -475,13 +475,13 @@ global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
 global.fsizedoc = '99999999999999' // 10TB
-global.fpagedoc = '999' //Gausah di ganti.
+global.fpagedoc = '1' //Gausah di ganti.
 
 /*⫘⫘⫘⫘ BIO OWNER ⫘⫘⫘⫘⫘*/
-global.nameowner = 'OHLX'
-global.umurowner = '15'
-global.asalowner = 'Yogyakarta, Jawa tengah'
-global.nomorowner = 'wa.me/6283160327945'
+global.nameowner = 'Virgo'
+global.umurowner = '-1'
+global.asalowner = 'Ngawi'
+global.nomorowner = 'wa.me/6288227856331'
 global.pacarowner = 'Ga ada pacar'
 /*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
 // DEFAULT MENU
@@ -638,7 +638,7 @@ global.fpay = {
 	key: {
 		remoteJid: '0@s.whatsapp.net',
 		fromMe: false,
-		id: 'OHLX',
+		id: 'Virgo',
 		participant: '0@s.whatsapp.net'
 	},
 	message: {
@@ -665,7 +665,7 @@ global.fpayment = (m) => {
 		key: {
 		remoteJid: '0@s.whatsapp.net',
 		fromMe: false,
-		id: 'OHLX',
+		id: 'Virgo',
 		participant: '0@s.whatsapp.net'
 	},
 	message: {
