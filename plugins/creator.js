@@ -10,7 +10,7 @@ let msg = await generateWAMessageFromContent(m.chat, { locationMessage: {
   degreesLongitude: 0,
   name: 'Click untuk chat owner',
   address: botdate,
-  url: 'https://wa.me/6283160327945',
+  url: 'https://wa.me/6288227856331',
   isLive: true,
   accuracyInMeters: 0,
   speedInMps: 0,
